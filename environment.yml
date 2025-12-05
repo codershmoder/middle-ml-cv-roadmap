@@ -1,0 +1,29 @@
+name: cv-ml
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.11
+  - pip
+
+  # Core scientific stack
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - seaborn
+  - scikit-learn
+
+  # Jupyter / notebooks
+  - jupyterlab
+  - ipykernel
+
+  # Utilities
+  - pillow
+  - tqdm
+
+  # Packages installed via pip
+  - pip:
+      - opencv-python
+      - tensorflow
