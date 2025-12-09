@@ -33,3 +33,13 @@ Refresh knowledge about:
 The process of passing are in the files:
 `03_TensorFlow_Keras_quick_reminder.ipynb` (notebooks)
 `03_small_sequential_model.ipynb` (src/deep_learning/models)
+
+## 2025-12-09 (Day 4)
+Understood: 
+- what convolutions, kernels, stride, padding, and pooling do and how they change feature map sizes.
+- what a receptive field is and how it grows as we go deeper in a CNN.
+- the difference between kernel size and number of filters, and why conv layers are more efficient than dense layers for images.
+- a basic picture of classic CNN architectures (LeNet, AlexNet, VGG, ResNet).
+
+The result of this day studying is presented as a small CNN in the next file:
+`04_small_CNN.ipynb` (src/deep_learning/models)
