@@ -41,5 +41,16 @@ Understood:
 - the difference between kernel size and number of filters, and why conv layers are more efficient than dense layers for images.
 - a basic picture of classic CNN architectures (LeNet, AlexNet, VGG, ResNet).
 
-The result of this day studying is presented as a small CNN in the next file:
+The result of this day studying is presented as a small CNN model in the next file:
 `04_small_CNN.ipynb` (src/deep_learning/models)
+
+## 2025-12-10 (Day 5)
+Refresh knowledge about: 
+- Overfitting vs underfitting.
+- L2-regularization (weight decay).
+- Dropout.
+- Data augmentation for images (flips, rotations, crops/zoom and translations).
+
+The result of this day studying is presented as a small CNN models in the next files:
+`05_cat_vs_dog_base_model.ipynb` (src/deep_learning/models)
+`05_cat_vs_dog_model_with_augmentation.ipynb` (src/deep_learning/models)
