@@ -51,6 +51,14 @@ Refresh knowledge about:
 - Dropout.
 - Data augmentation for images (flips, rotations, crops/zoom and translations).
 
-The result of this day studying is presented as a small CNN models in the next files:
+The result of this day studying is presented as a small CNN in the next files:
 `05_cat_vs_dog_base_model.ipynb` (src/deep_learning/models)
 `05_cat_vs_dog_model_with_augmentation.ipynb` (src/deep_learning/models)
+
+## 2025-12-11 (Day 6)
+- Understood the idea of transfer learning: using a pretrained CNN (e.g., ResNet, EfficientNet) as a backbone and adding my own classifier head instead of training a network from scratch.
+- Learned the difference between feature extraction (frozen backbone + new head) and fine-tuning (unfreezing upper layers and updating some pretrained weights with a small learning rate).
+- Saw how to correctly build Keras models with include_top=False, the right preprocess_input function, and appropriate loss/activation for multi-class problems.
+
+The result of this day studying is presented as a small CNN in the next file:
+`06_cat_vs_dog_model_transfer_learning.ipynb` (src/deep_learning/models)
