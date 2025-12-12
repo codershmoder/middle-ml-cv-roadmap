@@ -62,3 +62,11 @@ The result of this day studying is presented as a small CNN in the next files:
 
 The result of this day studying is presented as a small CNN in the next file:
 `06_cat_vs_dog_model_transfer_learning.ipynb` (src/deep_learning/models)
+
+## 2025-12-12 (Day 7)
+- Built an end-to-end image classification pipeline: dataset loading/organization, train–validation split, and a consistent preprocessing flow (resize to a fixed input shape).
+- Trained a binary CNN classifier (sigmoid output) on InceptionV3 backbone for horses vs humans, monitored validation metrics, and saved the best checkpoint as a reusable artifact (.keras).
+- Implemented a standalone py script that downloads an image from a user-provided URL, applies the same preprocessing as training, and outputs the predicted class with probabilities.
+- Documented the project in a concise README describing structure, requirements, training approach, saved artifacts, and inference usage.
+
+The result of this day studying is presented in the next folder: src/weekly_projects/week_1)
