@@ -70,3 +70,12 @@ The result of this day studying is presented as a small CNN in the next file:
 - Documented the project in a concise README describing structure, requirements, training approach, saved artifacts, and inference usage.
 
 The result of this day studying is presented in the next folder: src/weekly_projects/week_1)
+
+## 2025-12-13 (Day 8)
+- Learned how to choose between global thresholding (including Otsu) and adaptive thresholding based on whether lighting is uniform or uneven, and how threshold polarity (THRESH_BINARY vs THRESH_BINARY_INV) affects the mask.
+- Understood how morphological operations (opening/closing, plus erosion/dilation via kernel + iterations) are used to clean binary masks by removing small noise and filling holes before segmentation.
+- Learned the practical use of cv2.findContours (including why to pass mask.copy()), the difference between retrieval modes (RETR_EXTERNAL vs RETR_TREE), and how to filter contours by area to suppress noise.
+- Practiced extracting shape features from contours (bounding box, polygon approximation with approxPolyDP, and circularity) to support simple “general-shape” classification (triangle/rectangle/circle-like).
+
+The process of passing are in the file:
+`08_ClassicCV_contours_segmentation_morphology.ipynb` (notebooks)
