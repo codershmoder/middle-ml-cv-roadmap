@@ -79,3 +79,13 @@ The result of this day studying is presented in the next folder: src/weekly_proj
 
 The process of passing are in the file:
 `08_ClassicCV_contours_segmentation_morphology.ipynb` (notebooks)
+
+## 2025-12-14 (Day 9)
+Learned:
+- the local feature pipeline: detect keypoints and compute descriptors (ORB in practice), then match descriptors efficiently using Hamming distance.
+- how to filter noisy matches (e.g., KNN + ratio test) and why raw matches often contain many outliers.
+- what a homography matrix (3×3) represents and when it is valid (primarily planar scenes like posters/books or near-pure camera rotation).
+- why and how RANSAC is used with findHomography to reject outliers, produce an inlier mask, and enable reliable warpPerspective alignment/overlay.
+
+The process of passing are in the file:
+`09_Feature_detection_matching_Homography.ipynb` (notebooks)
