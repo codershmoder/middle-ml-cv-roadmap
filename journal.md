@@ -89,3 +89,13 @@ Learned:
 
 The process of passing are in the file:
 `09_Feature_detection_matching_Homography.ipynb` (notebooks)
+
+## 2025-12-15 (Day 10)
+- Learned to view optical flow as estimating 2D displacement vectors (u,v) between consecutive frames, typically for a sparse set of tracked feature points.
+- Practiced the practical PyrLK pipeline in OpenCV: detect good corners (goodFeaturesToTrack) → track with calcOpticalFlowPyrLK → filter by st/err and forward–backward consistency → visualize and periodically re-detect points.
+- Understood the core of Lucas–Kanade as a local least-squares solve over a window, where trackability depends on the conditioning of G=ATA (corners good; edges/flat regions problematic due to the aperture problem).
+- Connected key parameters to behavior: maxLevel helps with larger motion (pyramids), winSize trades noise-robustness vs local-motion fidelity, and regularization / eigenvalue thresholds improve stability on weak features.
+
+The process of passing are in the files:
+`10_1_Lucas-Kanade_by_hand_NumPy.ipynb` (notebooks)
+`10_2_Lucas-Kanade_PyrLK.ipynb` (notebooks)
