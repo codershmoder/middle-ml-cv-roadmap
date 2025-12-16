@@ -99,3 +99,13 @@ The process of passing are in the file:
 The process of passing are in the files:
 `10_1_Lucas-Kanade_by_hand_NumPy.ipynb` (notebooks)
 `10_2_Lucas-Kanade_PyrLK.ipynb` (notebooks)
+
+## 2025-12-16 (Day 11)
+- Learned Dense optical flow (Farnebäck) estimates - a full per-pixel motion field between consecutive frames (unlike LK, which tracks selected points), using a coarse-to-fine pyramid to handle larger displacements.
+- Learned to interpret dense flow via HSV (hue = direction, value = magnitude) and arrow grids, and to treat “sparkly” flow—especially on low-texture regions—as a sign of low reliability.
+- Practiced practical tuning for CPU real-time: downscaling first, then adjusting pyramid levels for fast motion and winsize/poly_sigma for stability vs boundary detail.
+- Covered key limitations and robustness checks: brightness-constancy violations (lighting flicker), textureless surfaces, occlusions/disocclusions, depth boundaries, and the value of gradient masking and forward–backward consistency for reliability.
+
+The process of passing are in the files:
+`11_1_Dense_optical_flow_Franeback_Method.ipynb` (notebooks)
+`11_2_Dense_optical_flow_Franeback_Method.ipynb` (notebooks)
