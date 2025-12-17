@@ -109,3 +109,14 @@ The process of passing are in the files:
 The process of passing are in the files:
 `11_1_Dense_optical_flow_Franeback_Method.ipynb` (notebooks)
 `11_2_Dense_optical_flow_Franeback_Method.ipynb` (notebooks)
+
+## 2025-12-17 (Day 12)
+- Learned the pinhole camera model basics and how a 3D world point projects to pixels via x∼K[R|T]X, separating intrinsics (𝐾) from extrinsics (R,t).
+- Understood epipolar geometry basics and the Fundamental matrix basics: correspondences must satisfy x′TFx=0, and F can be estimated from pixel matches even when intrinsics are unknown.
+- Understood the Essential matrix (E) basics as the calibrated version of epipolar geometry (E=K′TFK) basics, enabling recovery of R,t up to scale when K is known/approximated.
+- Clarified when homography H applies (planar scene or pure rotation) and how parallax reveals true 3D structure where a single H fails.
+
+The process of passing are in the files:
+`12_1_fundamental_epipolar.ipynb` (notebooks)
+`12_2_homography_warp.ipynb` (notebooks) 
+`12_3_essential_pose.ipynb` (notebooks)
