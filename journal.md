@@ -120,3 +120,15 @@ The process of passing are in the files:
 `12_1_fundamental_epipolar.ipynb` (notebooks)
 `12_2_homography_warp.ipynb` (notebooks) 
 `12_3_essential_pose.ipynb` (notebooks)
+
+## 2025-12-17 (Day 13)
+Learned:
+- the core idea of monocular visual odometry: estimate frame-to-frame camera motion (R,t) from 2D point correspondences, with translation recoverable only up to scale.
+- the high-level VO pipeline for a webcam: acquire frames → detect/track points (GFTT+KLT or ORB matching) → use RANSAC to reject outliers while estimating the Essential matrix → recoverPose to get  R and t.
+- what makes VO stable or unstable: good parallax and well-distributed points help; pure rotation, planar scenes, motion blur, and moving objects degrade R,t reliability (watch inlier count/ratio).
+- how to handle missing intrinsics: either calibrate once with a checkerboard to get K+distortion (best), or use an approximate K for a toy demo, expecting more drift/jitter.
+- how to calibrate a camera.
+
+The process of passing are in the files:
+`13_1_VO_toy_example.ipynb` (notebooks)
+`13_2_camera_calibration.ipynb` (notebooks)
