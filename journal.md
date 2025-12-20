@@ -121,7 +121,7 @@ The process of passing are in the files:
 `12_2_homography_warp.ipynb` (notebooks) 
 `12_3_essential_pose.ipynb` (notebooks)
 
-## 2025-12-17 (Day 13)
+## 2025-12-18 (Day 13)
 Learned:
 - the core idea of monocular visual odometry: estimate frame-to-frame camera motion (R,t) from 2D point correspondences, with translation recoverable only up to scale.
 - the high-level VO pipeline for a webcam: acquire frames → detect/track points (GFTT+KLT or ORB matching) → use RANSAC to reject outliers while estimating the Essential matrix → recoverPose to get  R and t.
@@ -132,3 +132,11 @@ Learned:
 The process of passing are in the files:
 `13_1_VO_toy_example.ipynb` (notebooks)
 `13_2_camera_calibration.ipynb` (notebooks)
+
+## 2025-12-19 (Day 14)
+- Implemented dense optical flow (Farnebäck) to estimate per-pixel motion between consecutive video frames and visualized it via HSV direction/magnitude mapping and an arrow grid overlay.
+- Bbuilt a robust global motion estimate by masking unreliable vectors and aggregating flow with the median, then smoothing it over time to get a stable direction and speed signal.
+- Added sparse Lucas–Kanade tracking (corners + trails) to understand feature-level motion and to compare sparse vs dense flow behavior.
+- Learned to interpret flow patterns for camera motion: translation tends to produce a coherent average flow (often opposite camera direction), while rotation can create mixed directions that cancel in a global dx.
+
+The result of this day studying is presented in the next folder: src/weekly_projects/week_2)
