@@ -140,3 +140,12 @@ The process of passing are in the files:
 - Learned to interpret flow patterns for camera motion: translation tends to produce a coherent average flow (often opposite camera direction), while rotation can create mixed directions that cancel in a global dx.
 
 The result of this day studying is presented in the next folder: src/weekly_projects/week_2)
+
+## 2025-12-21 (Day 15)
+- Learned how RNNs model sequences by carrying a hidden state (memory) across time steps, unlike feedforward networks that process inputs independently.
+- Understood why vanilla RNNs struggle with long-term dependencies (mainly vanishing/exploding gradients) and why training uses Backpropagation Through Time (BPTT).
+- Learned the core intuition of LSTM and GRU gating: they learn when to keep, forget, and update information, which makes long-range learning more stable.
+- Practiced key Keras sequence concepts: many-to-one vs many-to-many and how return_sequences controls whether a recurrent layer outputs one final state or the full sequence.
+
+The process of passing are in the file:
+`15_SimpleRNN_vs_LSTM_vs_GRU.ipynb` (notebooks)
